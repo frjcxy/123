@@ -1,0 +1,68 @@
+.content {
+  display: flex;
+  position: absolute;
+  top: 100rpx;
+  bottom: 0;
+}
+.content .nav {
+  height: 100%;
+  width: 200rpx;
+  background-color: #f4f4f4;
+  overflow: auto;
+}
+.content .nav .nav-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.content .nav .active {
+  background-color: #fff;
+  color: #ff0000;
+  position: relative;
+}
+.content .nav .active:before {
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+  content: "";
+  width: 8rpx;
+  height: 60rpx;
+  background-color: #ff0000;
+}
+.content .goods {
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+}
+.content .goods .topimg {
+  width: 100%;
+  height: 180rpx;
+}
+.content .goods .list .title {
+  text-align: center;
+  height: 130rpx;
+  line-height: 130rpx;
+}
+.content .goods .list .title span {
+  color: #ededed;
+  margin: 0 20rpx;
+}
+.content .goods .list .item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.content .goods .list .item-list .item {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.content .goods .list .item-list .item image {
+  width: 80%;
+  height: 60rpx;
+}
+.content .goods .list .item-list .item span {
+  font-size: 14px;
+  line-height: 65rpx;
+  display: block;
+}
